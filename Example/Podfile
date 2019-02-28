@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'APICaller_Example' do
+  pod 'APICaller', :path => '../'
+
+  target 'APICaller_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
