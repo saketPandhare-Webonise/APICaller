@@ -1,8 +1,8 @@
 {
   "name": "APICaller",
   "version": "0.1.0",
-  "summary": "A short description of APICaller.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "API Handler FOr Swift Using Alamofire",
+  "description": "Use this to call APIs in Swift using alamofire",
   "homepage": "https://github.com/saketPandhare-Webonise/APICaller",
   "license": {
     "type": "MIT",
@@ -18,5 +18,10 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "APICaller/Classes/**/*"
+  "source_files": "APICaller/Classes/**/*",
+  "dependencies": {
+    "Alamofire": [
+
+    ]
+  }
 }

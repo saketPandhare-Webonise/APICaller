@@ -28,9 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04CEAA2437825075A6017C16 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		04CEAA2437825075A6017C16 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		1E6EDE38E359020C130ADDE1 /* Pods_APICaller_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APICaller_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		31FF8561BF7D9768CC92456D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		31FF8561BF7D9768CC92456D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3B7B23C6C356F8F874B11E2D /* Pods_APICaller_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APICaller_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* APICaller_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APICaller_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7CA9E2CD35D2D5499320F80A /* Pods-APICaller_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APICaller_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-APICaller_Example/Pods-APICaller_Example.release.xcconfig"; sourceTree = "<group>"; };
-		AE5179A784466337086CF376 /* APICaller.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = APICaller.podspec; path = ../APICaller.podspec; sourceTree = "<group>"; };
+		AE5179A784466337086CF376 /* APICaller.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = APICaller.podspec; path = ../APICaller.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B365384EAAF1C42A398385CF /* Pods-APICaller_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APICaller_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-APICaller_Tests/Pods-APICaller_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C56BF17B4B3A2DA3D93600D5 /* Pods-APICaller_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APICaller_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APICaller_Example/Pods-APICaller_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E33D113D7E2B82C5F5566707 /* Pods-APICaller_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APICaller_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APICaller_Tests/Pods-APICaller_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -269,10 +269,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-APICaller_Example/Pods-APICaller_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/APICaller/APICaller.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/APICaller.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
