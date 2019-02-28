@@ -20,6 +20,8 @@ public class WebServiceHandler {
     /// - Important:
     ///   - If there is no internet connectivity, the request shouldn`t be sent,  in this case, failure will return the utf8 encoded string "No Network"
     ///   - If there is no internet connectivity, the current screen should prompt a popup
+  public init() {}
+    
   public func callWebservice(url: String,
                         methodType: HTTPMethod,
                         parameters: [String: Any]?,
