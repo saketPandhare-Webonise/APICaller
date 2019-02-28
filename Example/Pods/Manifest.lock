@@ -1,0 +1,16 @@
+PODS:
+  - APICaller (0.1.0)
+
+DEPENDENCIES:
+  - APICaller (from `../`)
+
+EXTERNAL SOURCES:
+  APICaller:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  APICaller: 5274d3653f63cf75829a7add0aae4d7b54943374
+
+PODFILE CHECKSUM: f9db5804e33e0da1649e53f7b86442f5b8a5d814
+
+COCOAPODS: 1.5.3

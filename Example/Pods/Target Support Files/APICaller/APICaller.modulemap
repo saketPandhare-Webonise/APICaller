@@ -1,0 +1,6 @@
+framework module APICaller {
+  umbrella header "APICaller-umbrella.h"
+
+  export *
+  module * { export * }
+}

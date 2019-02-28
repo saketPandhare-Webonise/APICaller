@@ -1,0 +1,22 @@
+{
+  "name": "APICaller",
+  "version": "0.1.0",
+  "summary": "A short description of APICaller.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/saketPandhare-Webonise/APICaller",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "saketPandhare-Webonise": "saket.pandhare@weboniselab.com"
+  },
+  "source": {
+    "git": "https://github.com/saketPandhare-Webonise/APICaller.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "APICaller/Classes/**/*"
+}
