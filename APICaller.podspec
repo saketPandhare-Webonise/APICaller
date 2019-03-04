@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'APICaller'
-  s.version          = '0.3.0'
+  s.version          = '0.4.0'
   s.summary          = 'API Handler FOr Swift Using Alamofire'
 
 # This description is used to generate tags and improve search results.
