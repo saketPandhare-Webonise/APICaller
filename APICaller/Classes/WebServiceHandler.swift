@@ -9,6 +9,8 @@ public class WebServiceHandler {
     
     let NO_NETWORK = "No Network"
     let SUCCESS_RANGE = 200 ... 299
+    let NO_INTERENT_CONNECTION = 1000 ///Custom Error code when internet is not available
+    let GET = "GET"
     /// This fucntion acts as a wrapper for webservice calls
     ///
     /// - Parameters:
@@ -29,7 +31,11 @@ public class WebServiceHandler {
                         showLoader: Bool,
                         succeess: @escaping ((_ response: AnyObject?,_ headerFields: AnyObject?,_ statusCode: Int)->()),
                         failure: @escaping (_ error: AnyObject?,_ statusCode: Int)->()) {
-        
+    ///Checks for internet Connectivity
+    if (!self.isConnectedToInternet()) {
+        failure(nil, NO_INTERENT_CONNECTION)
+        return
+    }
         Alamofire.request(url,
                           method: methodType,
                           parameters: parameters,
@@ -62,7 +68,7 @@ public class WebServiceHandler {
     /// - Parameter methodType: type of method
     /// - Returns: param encoding
    public func getEncoding(methodType: String) -> ParameterEncoding{
-        if (methodType == "Get") {
+        if (methodType == GET) {
             return URLEncoding.default
         }
         else {
@@ -89,6 +95,14 @@ public class WebServiceHandler {
     public func networkNotAvailable() -> NSData {
         let nsData = NO_NETWORK.data(using: .utf8)! as NSData
         return nsData
+    }
+}
+
+
+extension WebServiceHandler {
+    ///This function is used to check Internet Connection
+     func isConnectedToInternet() ->Bool {
+        return NetworkReachabilityManager()!.isReachable
     }
 }
 
